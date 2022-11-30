@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&family=Dancing+Script:wght@500&family=Darker+Grotesque:wght@500&family=EB+Garamond&family=Montserrat:wght@500&family=Poppins&family=Quicksand:wght@500&family=Tinos&family=Zilla+Slab:wght@500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* body{
+    background-color: yellow;
+} */
+body {
+    background: url("./images/bg-8.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;   
+}
+.main{
+    font-family: 'Poppins', sans-serif;
+}
+   /* bosba-list */
+.bosba {
+    --spacing: 25px;
+    --columns: 4;
+    margin-left: calc(-1 * var(--spacing));
+  }
+  .ream {
+    width: calc(calc(100% / var(--columns)) - var(--spacing));
+    margin-left: var(--spacing);
+    margin-bottom: var(--spacing);
+  }
+  .ream-title {
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+  }
+
+     /* footers-list */
+.footers {
+    --spacing: 25px;
+    --columns: 5;
+    margin-left: calc(-1 * var(--spacing));
+  }
+  .footer {
+    width: calc(calc(100% / var(--columns)) - var(--spacing));
+    margin-left: var(--spacing);
+    margin-bottom: var(--spacing);
+  }
+  .footer-title {
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+  }
+
+  @media (min-width: 320px) and (max-width: 480px){
+    .center-item{
+        width: 100%;
+    }
+    .head .head-menu,
+    .head .play{
+        display: none!important;
+    }
+    .head .logo{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .head .close-button{
+        display: block;
+    }
+    /* main */
+    .main .down-img{
+        width: 200px;
+    }
+    /* card */
+    .main .bosba{
+        --columns: 1;
+    }
+    .main .ream{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main .card-text{
+        padding: 15px;
+    }
+    .main .ream-image{
+        width: 70%!important;
+    }
+    /* title */
+    .main .item-title{
+        padding: 15px;
+    }
+    .main .title-img{
+        width: 100%;
+    }
+    /* footer */
+    .footers{
+        --columns: 1;
+    }
+    .footer-img{
+        width: 130px;
+    }
+  }
+
+  @media (min-width: 480px) and (max-width: 767px){
+    .center-item{
+        width: 100%;
+    }
+    .head .head-menu,
+    .head .play{
+        display: none!important;
+    }
+    .head .logo{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .head .close-button{
+        display: block;
+    }
+    /* main */
+    .main .down-img{
+        width: 280px;
+    }
+    /* card */
+    .main .bosba{
+        --columns: 2;
+    }
+    .main .card-text{
+        padding: 15px;
+    }
+    /* title */
+    .main .item-title{
+        padding: 15px;
+    }
+    .main .title-img{
+        width: 100%;
+    }
+    /* footer */
+    .footers{
+        --columns: 1;
+    }
+    .footer-img{
+        width: 130px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1025px){
+    .center-item{
+        width: 100%;
+    }
+    .head .head-menu,
+    .head .play{
+        display: none!important;
+    }
+    .head .logo{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .head .close-button{
+        display: block;
+    }
+    /* main */
+    /* card */
+    .main .bosba{
+        --columns: 4;
+    }
+    .main .card-text{
+        padding: 15px;
+    }
+    /* title */
+    .main .item-title{
+        padding: 15px;
+    }
+    .main .title-img{
+        width: 70%;
+    }
+    /* footer */
+    .footers{
+        --columns: 5;
+    }
+    .footer-img{
+        width: 130px;
+    }
+  }
